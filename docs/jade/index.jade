@@ -33,7 +33,7 @@ html(lang='en')
             li
               a(href='#why') Our Technology
             li
-              a(href='#contact') contact
+              a(href='#contact') Contact
 
 
 
@@ -46,45 +46,13 @@ html(lang='en')
             include main.jade
     hr.style-one
 
-    .container#why.full-height.vertical-center.parallax.right-bg
+    .container#intro.full-height.vertical-center.headline
       .row
         .col.col-lg-offset-1.col-lg-10
           .text-left
-            include why.jade
+            include intro.jade
 
     hr.style-one
-
-    .container#how.full-height.vertical-center.parallax.left-bg
-      .row
-        .col.col-lg-offset-1.col-lg-10
-          .text-left
-            include how.jade
-
-    hr.style-one
-
-    .container#what.full-height.vertical-center.parallax.right-bg
-      .row
-        .col.col-lg-offset-1.col-lg-10
-          .text-left
-            include what.jade
-
-    hr.style-one
-
-    .container#where.full-height.vertical-center.parallax.left-bg
-      .row
-        .col.col-lg-offset-1.col-lg-10
-          .text-left
-            include where.jade
-
-    hr.style-two
-
-    .container#register.full-height.vertical-center
-      .row
-        .col.col-lg-offset-2.col-lg-8
-          .text-left
-            include register.jade
-
-    hr.style-two
 
     .container#contact.full-height.vertical-center
       .row
@@ -103,9 +71,9 @@ html(lang='en')
         .inner-fixedbtn-up
           i.fas.fa-arrow-up.fa-2x
 
-    a(href='#register')
+    a(href='#contact')
       #fixedbtn-reg
-        .inner-fixedbtn-reg Register
+        .inner-fixedbtn-reg Contact
 
 
 
