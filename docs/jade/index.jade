@@ -7,8 +7,12 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     meta(name='description', content='A basic template for Bootstrap 3.0')
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==', crossorigin='anonymous')
     link(href="css/basic.css", rel="stylesheet")
     link(href="css/style.css", rel="stylesheet")
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js', integrity='sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==', crossorigin='anonymous')
+
 
     //if lt IE 9
       script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
@@ -41,18 +45,19 @@ html(lang='en')
 
     .container#main.full-height.vertical-center.headline
       .row
-        .col.col-lg-offset-2.col-lg-8
+        .col.col-lg-offset-1.col-lg-10.space
           .text-left
             include main.jade
-    hr.style-one
 
-    .container#intro.full-height.vertical-center.headline
-      .row
+
+    .container#intro.full-height.vertical-center.headline.diagonal-box.breathe
+
+      .row.space.content
         .col.col-lg-offset-1.col-lg-10
           .text-left
             include intro.jade
 
-    hr.style-one
+
 
     .container#contact.full-height.vertical-center
       .row
