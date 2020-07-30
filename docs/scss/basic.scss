@@ -277,6 +277,9 @@ span.page-info {
     font-size: 3em;
 }
 
+#intro h1.big-title {
+  padding-bottom: 50px;
+}
 .right{
   text-align: right;
 }
@@ -287,8 +290,12 @@ span.page-info {
 
 .outer h2 {
   font-weight:600;
-  font-size: 2em;
+  font-size: 1.6em;
   color: white;
+}
+
+.asym-left {
+  padding-right: 100px;
 }
 
 .inner p {
@@ -313,7 +320,7 @@ span.page-info {
 }
 .card-title {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding-top: 20px;
   margin: 20px;
 }
@@ -321,7 +328,7 @@ span.page-info {
 p.card-text {
   color: $dark-color;
   margin: 20px;
-  min-height: 180px;
+  min-height: 230px
 
 }
 .media {
@@ -330,6 +337,14 @@ p.card-text {
   -moz-box-shadow:    0px 0px 10px 10px $highlight;  /* Firefox 3.5 - 3.6 */
   box-shadow:         0px 0px 10px 10px $highlight;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 10px 10px $highlight;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 0px 10px 10px $highlight;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 0px 10px 10px $highlight;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+
 .responsive-iframe {
   top: 0;
   left: 0;
@@ -469,9 +484,10 @@ table#sunday, table#saturday {
 
 #fixedbtn-up, #fixedbtn-reg, #fixedbtn-twitter, #fixedbtn-facebook, #fixedbtn-instagram, .nav-bottom {
     position: fixed;
+    border: solid 1px $light-color;
     bottom: 20px;
     right: 20px;
-    background-color: $highlight;
+    background-color: $highlight-hover;
     color: $primary-color;
     font-size: 0.9em;
     padding: 10px 10px;

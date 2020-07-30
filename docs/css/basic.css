@@ -223,6 +223,9 @@ span.page-info {
 #intro h1 {
   font-size: 3em; }
 
+#intro h1.big-title {
+  padding-bottom: 50px; }
+
 .right {
   text-align: right; }
 
@@ -232,8 +235,11 @@ span.page-info {
 
 .outer h2 {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.6em;
   color: white; }
+
+.asym-left {
+  padding-right: 100px; }
 
 .inner p {
   font-size: 1em;
@@ -255,17 +261,25 @@ span.page-info {
 
 .card-title {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding-top: 20px;
   margin: 20px; }
 
 p.card-text {
   color: #002b1f;
   margin: 20px;
-  min-height: 180px; }
+  min-height: 230px; }
 
 .media {
   height: 400px;
+  -webkit-box-shadow: 0px 0px 10px 10px #085837;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 0px 10px 10px #085837;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 0px 10px 10px #085837;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+.box-shadow {
   -webkit-box-shadow: 0px 0px 10px 10px #085837;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 0px 0px 10px 10px #085837;
@@ -389,9 +403,10 @@ table#sunday, table#saturday {
 
 #fixedbtn-up, #fixedbtn-reg, #fixedbtn-twitter, #fixedbtn-facebook, #fixedbtn-instagram, .nav-bottom {
   position: fixed;
+  border: solid 1px #f4f4f4;
   bottom: 20px;
   right: 20px;
-  background-color: #085837;
+  background-color: #388038;
   color: #f9fbfe;
   font-size: 0.9em;
   padding: 10px 10px;
