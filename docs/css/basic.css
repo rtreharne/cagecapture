@@ -217,11 +217,12 @@ span.page-info {
   width: 100%;
   background-color: #002b1f; }
 
-#intro h1, h2, p {
+#intro h1, h2, p, #contact h1, h2, p {
   color: white; }
 
 #intro h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  text-align: center; }
 
 #intro h1.big-title {
   padding-bottom: 50px; }
@@ -287,6 +288,25 @@ p.card-text {
   box-shadow: 0px 0px 10px 10px #085837;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
+.box-shadow-about {
+  -webkit-box-shadow: 0px 0px 10px 10px #969696;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 0px 10px 10px #969696;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 0px 10px 10px #969696;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+#about .card-img-top {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 350px; }
+
+.center {
+  text-align: center; }
+
+.card-about {
+  border: none; }
+
 .responsive-iframe {
   top: 0;
   left: 0;
@@ -295,8 +315,45 @@ p.card-text {
   width: 100%;
   height: 100%; }
 
+#about {
+  width: 100%;
+  padding-bottom: 100px; }
+
+#about h1 {
+  font-size: 3em;
+  color: #002b1f;
+  padding-bottom: 50px;
+  text-align: center; }
+
+#contact {
+  width: 100%; }
+
+#contact h1 {
+  font-size: 3em;
+  padding-bottom: 50px;
+  text-align: center; }
+
+#contact a {
+  text-decoration: none;
+  color: white; }
+
+#contact a:hover {
+  color: white; }
+
+#contact.diagonal-box {
+  background-image: linear-gradient(45deg, #002b1f, #085837);
+  transform: skewY(-8deg);
+  margin-top: 7%;
+  margin-bottom: -7%; }
+
+.text-right {
+  text-align: right; }
+
 #support h1.big-title {
   font-size: 2em; }
+
+.social {
+  font-size: 3em; }
 
 #why {
   background-image: url("../img/why.jpg");
@@ -314,12 +371,16 @@ p.card-text {
   width: auto;
   background-repeat: no-repeat; }
 
+.more-tech p.card-text {
+  min-height: 100px; }
+
 #footer {
   background-image: url("../img/footer-bg.jpg");
   width: auto;
   background-repeat: no-repeat;
-  color: #f9fbfe;
-  padding: 100px; }
+  color: #002b1f;
+  padding: 100px;
+  padding-bottom: 7%; }
 
 #footer img {
   max-width: 200px; }

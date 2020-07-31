@@ -5,11 +5,16 @@ html(lang='en')
     meta(charset='utf-8')
     title CageCapture Ltd
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    meta(name='description', content='A basic template for Bootstrap 3.0')
+    meta(name='description', content='Porous Molecular Cages (POC)')
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==', crossorigin='anonymous')
     link(href="css/basic.css", rel="stylesheet")
     link(href="css/style.css", rel="stylesheet")
+
+    link(rel='apple-touch-icon', sizes='180x180', href='apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
+    link(rel='manifest', href='site.webmanifest')
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js', integrity='sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==', crossorigin='anonymous')
 
@@ -35,7 +40,9 @@ html(lang='en')
             li
               a(href='#') Home
             li
-              a(href='#why') Our Technology
+              a(href='#intro') Our Technology
+            li
+              a(href="#about") About Us
             li
               a(href='#contact') Contact
 
@@ -57,10 +64,16 @@ html(lang='en')
           .text-left
             include intro.jade
 
+    .container#about.full-height.vertical-center.headline.breathe
+      .row.space
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include about.jade
 
 
-    .container#contact.full-height.vertical-center
-      .row
+
+    .container#contact.full-height.vertical-center.headline.diagonal-box.breathe
+      .row.content
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include contact.jade
@@ -73,15 +86,8 @@ html(lang='en')
 
     a(href='#main')
       #fixedbtn-up
-        .inner-fixedbtn-up.box-shadow-white-circle
+        .inner-fixedbtn-up
           i.fas.fa-arrow-up.fa-2x
-
-    a(href='#contact')
-      #fixedbtn-reg.box
-        .inner-fixedbtn-reg.box-shadow-white Contact
-
-
-
 
 
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
