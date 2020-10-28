@@ -1,5 +1,5 @@
 article p {
-  color: black;
+  color: #424242;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -13,6 +13,9 @@ article img {
 
 .article-main {
   padding-top: 100px;
+}
+.article-main#main {
+  background-image: none;
 }
 
 h2 {
