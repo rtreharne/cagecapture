@@ -14,9 +14,9 @@ article img {
 .article-main#main {
   background-image: none; }
 
-h2 {
+.article-main h2 {
   color: black; }
 
-h1 {
+.article-main h1 {
   padding-top: 25px;
   padding-bottom: 25px; }
