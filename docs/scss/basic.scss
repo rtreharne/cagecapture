@@ -243,7 +243,7 @@ span.page-info {
 .diagonal-box {
 
 
-  background-image: linear-gradient(45deg, $highlight-hover, $dark-color);
+  background-image: linear-gradient(45deg, #1c421c, $highlight-hover);
   transform: skewY(-8deg);
   margin-top: -7%;
 
@@ -406,7 +406,7 @@ p.card-text {
 #contact.diagonal-box {
 
 
-  background-image: linear-gradient(45deg, $dark-color, $highlight);
+  background-image: linear-gradient(45deg, #1c421c, $highlight-hover);
   transform: skewY(-8deg);
   margin-top: 7%;
   margin-bottom: -7%;

@@ -196,7 +196,7 @@ span.page-info {
   background-position: center; }
 
 .diagonal-box {
-  background-image: linear-gradient(45deg, #388038, #002b1f);
+  background-image: linear-gradient(45deg, #1c421c, #388038);
   transform: skewY(-8deg);
   margin-top: -7%; }
 
@@ -341,7 +341,7 @@ p.card-text {
   color: white; }
 
 #contact.diagonal-box {
-  background-image: linear-gradient(45deg, #002b1f, #085837);
+  background-image: linear-gradient(45deg, #1c421c, #388038);
   transform: skewY(-8deg);
   margin-top: 7%;
   margin-bottom: -7%; }
