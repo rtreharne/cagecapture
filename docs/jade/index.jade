@@ -1,54 +1,10 @@
 doctype html
 html(lang='en')
   head
-    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
-    meta(charset='utf-8')
-    title CageCapture Ltd
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    meta(name='description', content='Porous Molecular Cages (POC)')
-    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==', crossorigin='anonymous')
-    link(href="css/basic.css", rel="stylesheet")
-    link(href="css/style.css", rel="stylesheet")
-
-    link(rel='apple-touch-icon', sizes='180x180', href='apple-touch-icon.png')
-    link(rel='icon', type='image/png', sizes='32x32', href='favicon-32x32.png')
-    link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
-    link(rel='manifest', href='site.webmanifest')
-
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js', integrity='sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==', crossorigin='anonymous')
-
-
-    //if lt IE 9
-      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    include head.jade
 
   body
-    //
-    .navbar.navbar-default.navbar-fixed-top
-      .container
-        .navbar-header
-
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#main')
-            img#Logo(src="img/logo.png")
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#') Home
-            li
-              a(href='#intro') Our Technology
-            li
-              a(href="#about") About Us
-            li
-              a(href='#contact') Contact
-
-
-
-    //
+    include navbar.jade
 
     .container#main.full-height.vertical-center.headline
       .row
@@ -90,36 +46,4 @@ html(lang='en')
           i.fas.fa-arrow-up.fa-2x
 
 
-    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-    script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
-    script(type='text/javascript', src='js/scrolling.js')
-    script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
-    // JavaScript jQuery code from Bootply.com editor
-    script(type='text/javascript').
-      $(document).ready(function() {
-      });
-    script.
-      var right = $(".right-bg");
-      var left = $(".left-bg");
-      right.css({
-        "background-position": (right.width()*.66) + "px " + "0px"
-      });
-      left.css({
-        "background-position": (-left.width()*.66) + "px " + "0px"
-      });
-    script.
-      $("#sat-btn").click(function(){
-      $("#saturday").show();
-      $("#friday").hide();
-      $("#sunday").hide();
-      });
-      $("#fri-btn").click(function(){
-      $("#friday").show();
-      $("#saturday").hide();
-      $("#sunday").hide();
-      });
-      $("#sun-btn").click(function(){
-      $("#saturday").hide();
-      $("#friday").hide();
-      $("#sunday").show();
-      });
+    include script.jade
